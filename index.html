@@ -8,10 +8,16 @@
     <title>Lot Calculator</title>
 </head>
 <body>
-    <input id="input-el" type="number" placeholder="Write the Amount of Pips">
+    <input id="account-el" class="input-el" type="number" placeholder="Account Size">
+    <input id="risk-el" class="input-el" type="number" placeholder="Risk">
+    <input id="pips-el" class="input-el" type="number" placeholder="Pips">
     <div id="meh">
-        <button id="button-el" >Submit</button>
+        <div>
+        <button onclick="save()" class="button-el" >Submit</button>
+        <button onclick="clear()" class="button-el">Clear</button>
+        </div>
         <p id="lots">Lots:</p>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

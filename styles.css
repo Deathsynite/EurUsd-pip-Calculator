@@ -3,8 +3,8 @@ body {
     padding-left: 15px;
     width: 400px;
 }
-#input-el {
-    width: 100%;
+.input-el {
+    width: 25%;
     padding: 8px;
     border: 2px solid #1ac0c6;
 
@@ -14,19 +14,20 @@ body {
     justify-content: space-between;
 }
 #lots {
-    margin-right: 20px;
+    margin-right: 100px;
     font-weight: Bold;
 }
-#button-el {
+.button-el {
     padding: 5px 10px;
     background-color: #0bd1d8;
-    margin-top: 5px;
+    margin-top: 12px;
+    margin-left: 5px;
     color: black;
     font-weight: bold;
     border: 2px solid #0bd1d8;
     border-radius: 5%;
 
 }
-#button-el:hover {
+.button-el:hover {
     background-color: #1ac0c6;
 }
