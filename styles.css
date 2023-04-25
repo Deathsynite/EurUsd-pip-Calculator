@@ -13,8 +13,10 @@ body {
 #meh{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 #lot-size-el {
+    margin-top: 20px;
     margin-right: 60px;
     font-weight: Bold;
 }
