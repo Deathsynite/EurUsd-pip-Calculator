@@ -2,11 +2,14 @@ const accountEl = document.getElementById("account-el");
 const riskEl = document.getElementById("risk-el");
 const pipsEl = document.getElementById("pips-el");
 const lotsEl = document.getElementById("lot-size-el"); 
+const saveBtn = document.getElementById("save-btn");
+const clearBtn = document.getElementById("clear-btn");
 let accountSize = localStorage.getItem("myInputValue");
 let risk = localStorage.getItem("myInputValue2");
 let pips = localStorage.getItem("myInputValue3");
 console.log(accountSize);
-
+saveBtn.addEventListener("click", save);
+clearBtn.addEventListener("click", clear);
 window.onload = function() {
     let savedValue1 = localStorage.getItem("myInputValue");
     let savedValue2 = localStorage.getItem("myInputValue2");
@@ -34,6 +37,7 @@ function clear() {
     localStorage.removeItem("myInputValue2");
     lotsEl.textContent = "Lots:"; // Reset the displayed lot size
 }
+
 
 
 function calculateLotSize() {
